@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public TutorialManager tutorialScript;
     [Header("Trial Rules")]
     public int totalMarks = 100;
-    public int passingMarks = 80;
+    public int passingMarks = 70;
     public int redLightPenalty = 15; 
 
     [Header("UI Connections")]
@@ -90,9 +90,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
-        if (marksText != null) marksText.text = "Marks: " + totalMarks;
+        if (marksText != null)
+        {
+            // Check the LanguageManager to see if Nepali is toggled ON
+            if (LanguageManager.isNepali)
+            {
+                marksText.text = "अंक: " + totalMarks; // Nepali translation
+            }
+            else
+            {
+                marksText.text = "Marks: " + totalMarks; // Default English
+            }
+        }
     }
 
     private void TriggerFailState()
