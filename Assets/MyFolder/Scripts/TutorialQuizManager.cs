@@ -29,7 +29,7 @@ public class TutorialQuizManager : MonoBehaviour
         new string[] { "Spacebar", "W", "S" },
         new string[] { "Left SHIFT", "Left CTRL", "Spacebar" },
         new string[] { "Q", "C", "E" },
-        new string[] { "A / D keys", "Left / Right Arrows", "Mouse Click" }
+        new string[] { "A / D keys", "L/R Arrows", "Mouse Click" }
     };
 
     // --- NEPALI ARRAYS ---
@@ -43,7 +43,7 @@ public class TutorialQuizManager : MonoBehaviour
         new string[] { "Spacebar", "W", "S" },
         new string[] { "Left SHIFT", "Left CTRL", "Spacebar" },
         new string[] { "Q", "C", "E" },
-        new string[] { "A / D keys", "Left / Right Arrows", "माउस क्लिक" }
+        new string[] { "A / D keys", "L / R Arrows", "माउस क्लिक" }
     };
 
     // The correct button index for each question (0 = first button, 1 = second, 2 = third)
